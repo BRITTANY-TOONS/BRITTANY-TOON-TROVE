@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>BRITTANY TOON TROVE</title>
+    <style>
+        body {
+            background-image: url("Moana.jpg");
+            background-size: cover; /* Ensure the background image covers the entire screen */
+            background-position: center; /* Center the background image */
+            color: hotpink; /* Set text color to white */
+            font-family: Arial, sans-serif; /* Specify font family */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px; /* Add padding */
+            text-align: center; /* Center text */
+        }
+        nav {
+            display: flex; /* Use flexbox for navigation items */
+            justify-content: center; /* Center navigation items horizontally */
+            margin-top: 10px; /* Add margin */
+        }
+        nav a {
+            color: white; /* Set link color to white */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 20px; /* Add padding */
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px; /* Add padding */
+            text-align: center; /* Center text */
+            position: fixed; /* Position footer at the bottom of the viewport */
+            width: 100%; /* Full width */
+            bottom: 0; /* Stick to the bottom */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BRITTANY TOON TROVE</h1>
+        <nav>
+            
+            <
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>s
+    </header>
+
+    <div class="gallery">
+        <!-- Add multiple images here -->
+        <img src="R.png" alt="poo">
+        <img src="tani.jpg" alt="Image 2">
+        <img src="tanni.png" alt="brittany">
+        <!-- Add more images as needed -->
+    </div>
+
+    <footer>
+        &copy; 2024 BRITTANY TOON TROVE. All rights reserved.
+    </footer>
+
+    <script>
+        // Function to shuffle the order of images in the gallery
+        function shuffleImages() {
+            var gallery = document.querySelector('.gallery');
+            for (var i = gallery.children.length; i >= 0; i--) {
+                gallery.appendChild(gallery.children[Math.random() * i | 0]);
+            }
+
+
+        <p>Welcome to Brittany Toon Trove, your ultimate destination for discovering and collecting vintage and contemporary animation art!</p>
+        <p>At Brittany Toon Trove, we are passionate about preserving the rich history and artistry of animation. Whether you're a seasoned collector or a newcomer to the world of animation art, our curated collection offers something for everyone.</p>
+        <p>Our mission is to provide enthusiasts with access to high-quality, authentic animation art pieces from beloved classics to the latest releases. We take pride in offering a diverse selection of artwork, including production cels, concept sketches, limited edition prints, and more.</p>
+        <p>With Brittany Toon Trove, you can explore the fascinating world of animation art, connect with fellow collectors, and add unique pieces to your collection.</p>
+        <p>Thank you for visiting Brittany Toon Trove. Start your journey into the enchanting realm of animation art today!</p>
+ 
+
+
+        }
+               <p>Have a question, comment, or inquiry? Feel free to get in touch with us using the form below:</p>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+
+
+
+        // Call the shuffleImages function when the page loads
+        window.addEventListener('load', shuffleImages);
+    </script>
+</body>
+</html>
